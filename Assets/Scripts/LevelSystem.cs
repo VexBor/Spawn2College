@@ -18,6 +18,12 @@ public class LevelSystem : MonoBehaviour
         UpdateUi();
     }
 
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.E)) {
+            AddXp(20);
+        }
+    }
+
     public int NeedXP() {
         return Mathf.RoundToInt(100 * level * 1.3f);
     }
@@ -34,8 +40,8 @@ public class LevelSystem : MonoBehaviour
     }
 
     private void UpdateUi() {
-        xpBar.value = Mathf.Lerp(xpBar.value, (float)xp / NeedXP(), Time.deltaTime * 5f);
-        levelTxt.text = "Рівень " + level;
+        xpBar.value = (float)xp / NeedXP();
+        levelTxt.text = $"Рівень {level} \n{xp}/{NeedXP()}";
     }
 
     private void Save() {
