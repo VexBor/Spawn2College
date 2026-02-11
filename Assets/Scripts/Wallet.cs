@@ -9,7 +9,7 @@ using UnityEngine.Events;
 
     void Start() {
         balance = PlayerPrefs.GetInt(BalanceKey);
-        OnBalanceChanged?.Invoke(balance);
+        OnBalanceChanged.Invoke(balance);
     }
 
     public bool Withdraw(int count) {
@@ -18,7 +18,7 @@ using UnityEngine.Events;
         }
         else {
             balance -= count;
-          OnBalanceChanged?.Invoke(balance);
+          OnBalanceChanged.Invoke(balance);
             Save();
             return true;
         }
@@ -26,7 +26,7 @@ using UnityEngine.Events;
 
     public void Add(int count){
         balance += count;
-        OnBalanceChanged?.Invoke(balance);
+        OnBalanceChanged.Invoke(balance);
         Save();
     }
 
