@@ -320,7 +320,7 @@ TextureImporter:
         width: 75
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,7 +342,7 @@ TextureImporter:
         width: 74
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -351,6 +351,50 @@ TextureImporter:
       bones: []
       spriteID: f8a4b76af2adef87aa0b0ad5a9145ee4
       internalID: -62551356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nut_April_27-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 403
+        width: 136
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7d83e6e0b4905d89ba2afe44bfc3d6
+      internalID: -113441733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nut_April_27-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 124
+        width: 147
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc8115ce2effda56866dd0a2cf41ba2
+      internalID: 1022711543
       vertices: []
       indices: 
       edges: []
@@ -371,6 +415,8 @@ TextureImporter:
     nameFileIdTable:
       Nut_April_27-removebg-preview_0: 936460595
       Nut_April_27-removebg-preview_1: 1024999424
+      Nut_April_27-removebg-preview_10: -113441733
+      Nut_April_27-removebg-preview_11: 1022711543
       Nut_April_27-removebg-preview_2: 329937289
       Nut_April_27-removebg-preview_3: 1831197950
       Nut_April_27-removebg-preview_4: 2096341151

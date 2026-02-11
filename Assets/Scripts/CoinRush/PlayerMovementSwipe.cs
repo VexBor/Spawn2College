@@ -10,7 +10,6 @@ public class PlayerMovementSwipe : MonoBehaviour
 
     [Header("Lane System")]
     public float laneDistance = 2f;
-    private int currentLane = 0;
     private int targetLane = 0;
 
     [Header("Jump / Slide")]
