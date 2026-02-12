@@ -4,18 +4,18 @@ using System.Collections.Generic;
 public class PlatformGenerator : MonoBehaviour
 {
     [Header("Platform Prefabs")]
-    public GameObject[] platformPrefabs;
+    [SerializeField] private GameObject[] platformPrefabs;
 
     [Header("Obstacle / Coin Prefabs")]
-    public GameObject[] obstaclePrefabs;
-    public GameObject coinPrefab;
+    [SerializeField] private GameObject[] obstaclePrefabs;
+    [SerializeField] private GameObject coinPrefab;
 
     [Header("Spawn Settings")]
-    public Transform player;
-    public int initialPlatforms = 5;
-    public int safeStartPlatforms = 2; 
-    public float platformLength = 10f;
-    public float laneDistance = 2f;
+    [SerializeField] private Transform player;
+    [SerializeField] private int initialPlatforms = 5;
+    [SerializeField] private int safeStartPlatforms = 2; 
+    [SerializeField] private float platformLength = 10f;
+    [SerializeField] private float laneDistance = 2f;
 
     [Header("Spawn Chances")]
     [Range(0f, 1f)] public float obstacleChance = 0.3f;

@@ -41,7 +41,7 @@ public class LevelSystem : MonoBehaviour
 
     private void UpdateUi() {
         xpBar.value = (float)xp / NeedXP();
-        levelTxt.text = $"Рівень {level} \n{xp}/{NeedXP()}";
+        levelTxt.text = $"Рівень {level}";
     }
 
     private void Save() {

@@ -4,25 +4,25 @@ using System.Collections;
 public class PlayerMovementSwipe : MonoBehaviour
 {
     [Header("Move Forward")]
-    public float forwardSpeed = 6f;
-    public float speedIncrease = 0.1f;
-    public float maxSpeed = 12f;
+    [SerializeField] private float forwardSpeed = 6f;
+    [SerializeField] private float speedIncrease = 0.1f;
+    [SerializeField] private float maxSpeed = 12f;
 
     [Header("Lane System")]
-    public float laneDistance = 2f;
+    [SerializeField] private float laneDistance = 2f;
     private int targetLane = 0;
 
     [Header("Jump / Slide")]
-    public float jumpForce = 6f;
-    public float slideTime = 0.5f;
+    [SerializeField] private float jumpForce = 6f;
+    [SerializeField] private float slideTime = 0.5f;
 
     [Header("Swipe Detection")]
-    public float minSwipeDistance = 50f;
+    [SerializeField] private float minSwipeDistance = 50f;
 
-    Rigidbody rb;
-    Vector2 startTouch;
-    bool swiping = false;
-    bool isSliding = false;
+    private Rigidbody rb;
+    private Vector2 startTouch;
+    private bool swiping = false;
+    private bool isSliding = false;
 
     void Start()
     {
